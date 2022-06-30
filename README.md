@@ -1,3 +1,3 @@
 # MetroloJA
 
-A guide to make metrology analyze after launch MetroloJ_QC ImageJ plugin.
+A guide for time-tracking metrology analyses of light microscopes, after using the ImageJ MetroloJ_QC plugin.
