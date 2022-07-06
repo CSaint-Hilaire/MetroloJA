@@ -1,8 +1,0 @@
-pandas==1.4.3
-plotly==5.9.0
-scipy==1.8.0
-functools==0.5
-PyPDF2==1.26.0
-datetime==4.5
-pathlib==1.0.1
-alive_progress==2.4.1
