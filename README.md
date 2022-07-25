@@ -1,5 +1,5 @@
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_white.png">
+ <source media="(prefers-color-scheme: dark)" srcset="https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_black.png">
  <img alt="light-logo" src="https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_white.png">
 </picture>
 
