@@ -1,5 +1,7 @@
 # MetroloJA
 
+![Logo](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MotroloJA_logo_black.png)
+
 A guide for time-tracking metrology analyses of light microscopes, after using the ImageJ MetroloJ_QC plugin. :tada:
 
 ### MetroloJ_QC plugin
