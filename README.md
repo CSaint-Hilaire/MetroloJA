@@ -9,6 +9,6 @@ MetroloJ_QC is a plugin whose goal is to enable automation of quality control te
 
 ### MetroloJA description
 MetroloJA is a Jupyter notebook that allows a follow-up over time of these quality control tests of light microscopes of a facility by proceeding as follows: 
-    > - [x] Extract analysis data from the **Processed** folder :+1:
-    > - [x] Represent this data as a **boxplot** with statistical tests, for follow-up over time with dates :tada:
+ > - [x] Extract analysis data from the **Processed** folder :+1:
+ > - [x] Represent this data as a **boxplot** with statistical tests, for follow-up over time with dates :tada:
 
