@@ -1,4 +1,7 @@
-![GitHub-Mark-Light](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_white.png)![GitHub-Mark-Dark](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_black.png)
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="[dark-logo](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_white.png)">
+ <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="[light-logo](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/MetroloJA_logo_white.png)">
+</picture>
 
 A guide for time-tracking metrology analyses of light microscopes, after using the ImageJ MetroloJ_QC plugin. :tada:
 
