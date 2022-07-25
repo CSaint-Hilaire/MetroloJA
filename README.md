@@ -10,3 +10,4 @@ MetroloJA is a Jupyter notebook that allows a follow-up over time of these quali
  > - [x] Extract analysis data from the **Processed** folder :+1:
  > - [x] Represent this data as a **boxplot** with statistical tests, for follow-up over time with dates :tada:
 
+## Getting Started
