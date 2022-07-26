@@ -25,5 +25,6 @@ After loading, this web page appears :
 
 Click on the green button and make following selections : 
 
-https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/simplescreenrecorder-2022-07-26_14.10.14.mp4
-
+<video width="320" height="240" controls>
+  <source src="/images/simplescreenrecorder-2022-07-26_16.33.21.mp4" type="video/mp4">
+</video>
