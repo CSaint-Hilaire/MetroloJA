@@ -19,4 +19,6 @@ The only thing to do is to click on this [link](https://mybinder.org/v2/gh/CSain
 The notebook opens in an executable environment from [Binder](https://mybinder.readthedocs.io/en/latest/), and it is converted into a standalone application using [Voilà](https://voila.readthedocs.io/en/stable/using.html). The process can take few minutes, be patient ! :laughing:
 
 ### Usage
+After loading, this web page appears :
+
 ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png)
