@@ -15,5 +15,5 @@ MetroloJA is a Jupyter notebook that allows a follow-up over time of these quali
 
 ## Getting Started
 ### Installation
-
+The only thing to do is click on this [link]([https://github.com/MontpellierRessourcesImagerie/MetroloJ_QC](https://mybinder.org/v2/gh/CSaint-Hilaire/MetroloJA/HEAD?urlpath=%2Fvoila%2Frender%2Fmetroloj_analyze.ipynb). 
 ### Usage
