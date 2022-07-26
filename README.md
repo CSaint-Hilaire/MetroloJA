@@ -22,3 +22,5 @@ The notebook opens in an executable environment from [Binder](https://mybinder.r
 After loading, this web page appears :
 
 ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png)
+
+Click on the green button and make following selections : 
