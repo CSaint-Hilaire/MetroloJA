@@ -24,3 +24,8 @@ After loading, this web page appears :
 ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png)
 
 Click on the green button and make following selections : 
+
+![Video Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/simplescreenrecorder-2022-07-26_14.10.14.mp4
+)
+
+
