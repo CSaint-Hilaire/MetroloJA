@@ -26,5 +26,3 @@ After loading, this web page appears :
 Click on the green button and make following selections : 
 
 
-<video src='https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/simplescreenrecorder-2022-07-26_14.10.14.mp4' width=180></video>
-
