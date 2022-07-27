@@ -21,7 +21,7 @@ The notebook opens in an executable environment from [Binder](https://mybinder.r
 ### Usage
 After loading, this web page appears :
 
-![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png)
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png) ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1bis.png)
 
 Click on the green button and make following selections : 
 1. Select the type of analyze
@@ -47,3 +47,5 @@ In this example, the resolution (FWHM), the fitting between raw data and a Gauss
 ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_7.png)
 
 At the end, all boxplot are displayed on the web page, save or not according to your selection.
+
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_8.png)
