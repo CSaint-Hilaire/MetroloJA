@@ -24,5 +24,26 @@ After loading, this web page appears :
 ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png)
 
 Click on the green button and make following selections : 
+1. Select the type of analyze
 
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_2.png)
 
+2. Select the input folder which contains MetroloJ_QC's **Processed** folder for each acquisition date
+
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_3.png)
+
+3. Select all desired measurement types
+
+In this example, the resolution (FWHM), the fitting between raw data and a Gaussian (R2) and the signal to background ratio (SBR) are selected  
+
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_4.png) ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_5.png)
+
+4. Indicate if you want to save your boxplot
+
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_6.png)
+
+5. If **yes**, select your output folder 
+
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_7.png)
+
+At the end, all boxplot are displayed on the web page, save or not according to your selection.
