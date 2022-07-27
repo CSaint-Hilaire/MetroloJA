@@ -21,12 +21,12 @@ The notebook opens in an executable environment from [Binder](https://mybinder.r
 ### Usage
 After loading, this web page appears :
 
-![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png) ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1bis.png)
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_1.png) 
 
 Click on the green button and make following selections : 
 1. Select the type of analyze
 
-![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_2.png)
+![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_2.png) ![Voilà Page](https://github.com/CSaint-Hilaire/MetroloJA/blob/main/images/usage_2bis.png)
 
 2. Select the input folder which contains MetroloJ_QC's **Processed** folder for each acquisition date
 
