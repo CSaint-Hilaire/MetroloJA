@@ -9,9 +9,6 @@ voila
 ipympl
 ipywidgets>=7
 jupyterlab>=0.35
-nbconvert
-nodejs
 pyqt>=5.9
 python>=3.7
-pythreejs
 tornado
