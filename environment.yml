@@ -1,4 +1,4 @@
-name: MetroloJA
+name: demo
 channels:
   - conda-forge
   - defaults
