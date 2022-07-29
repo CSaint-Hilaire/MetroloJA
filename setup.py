@@ -19,6 +19,7 @@ setup(
         "alive_progress==2.4.1", 
         "plotly==5.1.0", 
         "setuptools==58.0.4",
+        "PyQt5==5.15.6",
     ],
     setup_requires=['pytest-runner'],
     tests_require=['pytest==4.4.1'],
