@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-set -eux
-pip install -e . --ignore-installed --no-deps
-jupyter labextension install $(cat labex.txt)
+
+jupyter-repo2docker -e DISPLAY=unix$DISPLAY
