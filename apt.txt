@@ -1,4 +1,11 @@
+libasound2
+libegl1-mesa
 libgl1-mesa-glx
-xorg
-openbox
-docker
+libgtk2.0-dev
+libxcomposite1
+libxcursor1
+libxi6
+libxrandr2
+libxss1
+libxtst6
+xvfb
