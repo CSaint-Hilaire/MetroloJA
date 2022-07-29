@@ -1,5 +1,4 @@
-#!/bin/bash
-
-docker run -v /tmp/.X11-unix:/tmp/.X11-unix
-
-docker run -e DISPLAY=unix$DISPLAY
+#!/usr/bin/env bash
+set -eux
+pip install -e . --ignore-installed --no-deps
+jupyter labextension install $(cat labex.txt)
