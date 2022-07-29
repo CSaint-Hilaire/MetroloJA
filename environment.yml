@@ -16,3 +16,11 @@ dependencies:
   - python >=3.7,<3.8
   - pythreejs
   - tornado <6
+  - alive_progress ==2.4.1
+  - pandas
+  - plotly ==5.1.0
+  - PyPDF2 ==2.4.2
+  - scipy
+  - setuptools ==58.0.4
+  - voila
+  - PyQt5 ==5.15.6
