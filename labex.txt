@@ -1,5 +1,0 @@
-@jupyter-widgets/jupyterlab-manager
-bqplot
-jupyter-matplotlib
-jupyterlab_bokeh
-jupyter-threejs
