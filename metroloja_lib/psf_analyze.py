@@ -515,13 +515,6 @@ def create_SBR_box(df_SBR, result, im_path, df_MedStd_SBR, leg_dict, sys_name):
 
 def select_param():
 
-    '''
-    master2 = tk.Tk()
-    master2.geometry("450x150")
-    master2.title('Check all the measurements you want to plot')
-    '''
-
-
     data = ["FWHM", "Fit (R2)", "Mes./theory resolution ratio", "SBR"]
     
     checkboxes = [widgets.Checkbox(value=False, description=label) for label in data]
@@ -548,8 +541,7 @@ def select_param():
                 selected_param = selected_param + [checkboxes[i].description]
         
         print('OK!')
-        #print(selected_param)
-        #return(selected_param)
+
     
     for i in range(4):
         checkboxes_output.children[i].observe(disable_param_button)
@@ -565,13 +557,13 @@ values = {"FWHM" : "1",
               "SBR" : "4"}
 
 def display_selected_plot(df_XYZ, df_SBR, dfXYZ_MedStd, df_MedStd_SBR, folder_selected, leg_dict, selected_param=selected_param, values=values):
-    main = tk.Tk()
-    main.withdraw()
-    main.geometry("100x100")
+    widgets.ToggleButtons(
+        options=['Yes', 'No'],
+        description='Do you want to save your figures in PDF format ? ',
+        disabled=False,
+        button_style='info', # 'success', 'info', 'warning', 'danger' or ''
+    )
 
-
-
-    result = tk.messagebox.askquestion("Save", "Do you want to save your figures in PDF format ?")
 
 
     if result == 'yes':
