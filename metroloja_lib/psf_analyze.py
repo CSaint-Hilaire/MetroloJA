@@ -1,6 +1,7 @@
 import os, glob, pathlib, time, datetime, shutil
 import plotly.graph_objects as go
 import plotly.express as px
+import ipywidgets as widgets
 import tkinter as tk
 import pandas as pd
 
@@ -10,6 +11,8 @@ from PyPDF2 import PdfFileMerger
 from functools import reduce
 from scipy import stats
 
+global selected_param
+selected_param = None
 
 def select_folder(folder_selected):
     date_file = os.listdir(folder_selected)
@@ -43,7 +46,7 @@ def select_folder(folder_selected):
 
 
 
-    print('Images name :')
+    #print('Images name :')
     for indx in range(len(all_image_name)):
         allimages = all_image_name[indx]
         for i in range(len(allimages)-1):
@@ -60,10 +63,10 @@ def select_folder(folder_selected):
 
     lf_name = []
     for indx in range(len(all_image_name)):
-        print(f'Date {indx + 1}')
+        #print(f'Date {indx + 1}')
         allimages = all_image_name[indx]
         for j in allimages:
-            print(f'   {j}')
+            #print(f'   {j}')
             lf_name.append(j)
     
     return(folder_selected, date_file, all_image_name, lf_name, len_tot_image)
@@ -72,7 +75,7 @@ def select_folder(folder_selected):
 
 
 def processed_path(folder_selected, date_file):
-    print('Path of processed folder : \n')
+    #print('Path of processed folder : \n')
     all_processed_path = []
     for j in date_file:
         dt_path = os.path.join(folder_selected, j)
@@ -82,7 +85,7 @@ def processed_path(folder_selected, date_file):
             try:
                 if i.startswith('.') == False:
                     processed_path2 = os.path.join(processed_path,i)
-                    print(processed_path2)
+                    #print(processed_path2)
                     all_processed_path.append(processed_path2)
                     
             except:
@@ -511,55 +514,57 @@ def create_SBR_box(df_SBR, result, im_path, df_MedStd_SBR, leg_dict, sys_name):
 
 
 def select_param():
-    values = {"FWHM" : "1",
+
+    '''
+    master2 = tk.Tk()
+    master2.geometry("450x150")
+    master2.title('Check all the measurements you want to plot')
+    '''
+
+
+    data = ["FWHM", "Fit (R2)", "Mes./theory resolution ratio", "SBR"]
+    
+    checkboxes = [widgets.Checkbox(value=False, description=label) for label in data]
+    checkboxes_output = widgets.VBox(children=checkboxes)
+    
+    
+    
+    button_param_selected = widgets.Button(description="Get Selected!")
+    output = widgets.Output()
+    
+    
+    button_param_selected.layout.visibility = 'hidden'
+    
+    
+    def disable_param_button(b):
+        button_param_selected.layout.visibility = 'visible'
+       
+    
+    def return_param(b):
+        
+        selected_param = []
+        for i in range(0, len(checkboxes)):
+            if checkboxes[i].value == True:
+                selected_param = selected_param + [checkboxes[i].description]
+        
+        print('OK!')
+        #print(selected_param)
+        #return(selected_param)
+    
+    for i in range(4):
+        checkboxes_output.children[i].observe(disable_param_button)
+    button_param_selected.on_click(return_param)
+    display(checkboxes_output)
+    display(button_param_selected, output)
+
+
+    
+values = {"FWHM" : "1",
               "Fit (R2)" : "2",
               "Mes./theory resolution ratio" : "3",
               "SBR" : "4"}
 
-
-    master2 = tk.Tk()
-    master2.geometry("450x150")
-    master2.title('Check all the measurements you want to plot')
-
-
-    values2 = ["FWHM", "Fit (R2)", "Mes./theory resolution ratio", "SBR"]
-
-    states_list = []
-    for text in values2:
-        check = tk.StringVar(master2)
-        check_but = tk.Checkbutton(master2, text = text, variable = check,
-                                   onvalue = text, offvalue = 'off', command=check.get())
-        check_but.pack(padx=0.5, pady=0.5, anchor=tk.W)
-        states_list.append(check)
-
-    button2 = tk.Button(
-        master2,
-        text="Get Selected",
-        command=master2.quit)
-    button2.pack(fill=tk.X, padx=5, pady=5)
-
-    btn = tk.Button(master2,text="Close", command=master2.quit)
-    btn.pack(pady = 5)
-
-
-    master2.mainloop()
-    master2.destroy()
-
-    print("Selection :")
-    selected_param = []
-    for v in states_list:
-        if v.get()!='':
-            selected_param.append(v.get())
-            print(f"  * {v.get()}")
-    print('OK !')
-
-    return(selected_param, values)
-
-
-    
-    
-
-def display_selected_plot(values, selected_param, df_XYZ, df_SBR, dfXYZ_MedStd, df_MedStd_SBR, folder_selected, leg_dict):
+def display_selected_plot(df_XYZ, df_SBR, dfXYZ_MedStd, df_MedStd_SBR, folder_selected, leg_dict, selected_param=selected_param, values=values):
     main = tk.Tk()
     main.withdraw()
     main.geometry("100x100")
