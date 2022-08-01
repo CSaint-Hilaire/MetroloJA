@@ -11,12 +11,7 @@ from functools import reduce
 from scipy import stats
 
 
-def select_folder():
-    root = tk.Tk()
-    root.withdraw()
-
-
-    folder_selected = fd.askdirectory() 
+def select_folder(folder_selected):
     date_file = os.listdir(folder_selected)
     for i in date_file:
         if i.startswith('.'):
